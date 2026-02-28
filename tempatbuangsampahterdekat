@@ -1,0 +1,43 @@
+import discord
+from discord.ext import commands
+
+intents = discord.Intents.default()
+intents.message_content = True
+
+bot = commands.Bot(command_prefix='$', intents=intents)
+
+@bot.event
+async def on_ready():
+    print(f'We have logged in as {bot.user}')
+
+@bot.command()
+async def hello(ctx):
+    await ctx.send(f'Hi! I am a bot {bot.user}!')
+
+@bot.command()
+async def tempatbuangsampahdekat(ctx):
+    await ctx.send(f'jaraknya 30Km dari rumahmu')
+
+
+
+@bot.command()
+async def heh(ctx, count_heh = 5):
+    await ctx.send("he" * count_heh)
+
+@bot.command(name = "meme")
+
+async def meme(ctx):
+    with open('image/meme1.jpeg', 'rb') as f:
+        # Mari simpan file perpustakaan/library Discord yang dikonversi dalam variabel ini!
+        picture = discord.File(f)
+   # Kita kemudian dapat mengirim file ini sebagai tolok ukur!
+    await ctx.send(file=picture)
+
+
+
+
+
+# in some other file...
+
+
+bot.run("MTQ3MjE2NDc0MzM1ODk3MTkzNQ.Gc5m8u.1qJSO10Lk-BfZ_6TGVvCkE-3id6issV16KsVCw")
