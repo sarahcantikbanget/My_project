@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sarah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Weather</h1>
+    <p>location pekanbaru</p>
+    <h2>today weather</h2>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/0d51101d45/pekanbaru/" data-label_1="PEKANBARU" data-label_2="WEATHER" data-theme="original" >PEKANBARU WEATHER</a>
+    <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+             <ul>
+                   <li>made by sarah</li>
+                   <li>bye</li>
+             </ul>
+     <img src="images.jpg" alt="Gambar 1">
+</body>
+</html> 
